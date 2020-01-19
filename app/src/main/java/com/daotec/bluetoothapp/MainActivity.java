@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView listVIew = (ListView) findViewById(R.id.listView);
-    TextView statusTextView = (TextView) findViewById(R.id.statusTextView);
-    Button searchButton = (Button) findViewById(R.id.searchButton);
+    ListView listVIew;
+    TextView statusTextView;
+    Button searchButton;
     BluetoothAdapter bluetoothAdapter;
 
     public void searchClicked(){
@@ -25,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        listVIew = findViewById(R.id.listView);
+        statusTextView =  findViewById(R.id.statusTextView);
+        searchButton = findViewById(R.id.searchButton);
     }
 }
